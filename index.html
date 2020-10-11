@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+
+        <!-- ------------Меню (верхнее и боковые) ------------------->
+        <nav>
+            <!-- -----------верхнее меню и логотип----------->
+            <div id="startSlide" class="menu">
+                <a class='logo' href="#">mntn</a>
+                <ul>
+                    <li class="special"><a href="">Equipment</a></li>
+                    <li class="special"><a href="">About us</a></li>
+                    <li class="special"><a href="">Blog</a></li>
+                </ul>
+                <a class="account" href=""><i class="far fa-user-circle"></i> Account</a>
+            </div>
+            <!-- ---------------Левое меню------------------->
+            <div class="leftSideMenu">
+                <ul>
+                    <li><a target="_blank" href="" class="folow">Follow us</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <!-- ------------Правое меню----------------------->
+            <div class="rightSideMenu">
+                <div class="range">
+                    <input type="range" min="10" max="100" list="rangeList1" step="1" value="15">
+                    <datalist id="rangeList1">
+                        <option value="0" label="0">
+                        <option value="1" label="1">
+                        <option value="2" label="2">
+                        <option value="3" label="3">
+                    </datalist>
+                </div>
+
+                <div class="rightSideMenuBox">
+                    <ul>
+                        <li><a href="#startSlide">Start</a></li>
+                        <li><a href="#firstSlide">01</a></li>
+                        <li><a href="#secondSlide">02</a></li>
+                        <li><a href="#thirdSlide">03</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-------------------Паралакс и основной заголовок---------- -->
+
+        <div class="parallax-test parallax-test--zero">
+            <div style="position: relative;">
+                <img class="w-100" src="../../img/bg0.png" alt="">
+
+
+                <div class="title__bg"></div>
+            </div>
+        </div>
+        <div class="parallax-test parallax-test--one">
+            <div class="firstDescription">
+                <p class="sectionTitle">a hiking guide</p>
+                <h1 class="title">Be prepared for the Mountains and beyond!</h1>
+                <button class="scrollBtn"><a href="#firstSlide">scroll down <i class="fas fa-arrow-up"></i></a></button>
+            </div>
+            <div>
+                <img class="w-100" src="../../img/bg1.png" alt="">
+            </div>
+        </div>
+        <div class="parallax-test parallax-test--two">
+            <div>
+                <img class="w-100" src="../../img/bg2.png" alt="">
+            </div>
+        </div>
+        <div class="parallax-test parallax-test--end">
+            <!-- <div>
+            <h1 style='padding-top: 400px;' class="h1">Be prepared for the Mountains and beyond!</h1>
+          </div> -->
+        </div>
+
+
+
+        <!---------------------Секция  с описанием основного контента -->
+
+        <!-- Секции с описанием повторяются за исключением того, что в четных секциях добавлены два новых класса  "block2" и "block2Description". Это надо для зеркального отражения этих блоков на странице-->
+
+        <section class="first">
+
+            <div id="firstSlide" class="block1">
+                <div class="block1Description">
+                    <p class="number">01</p>
+                    <p class="sectionTitle">get started</p>
+                    <h1 class="title">What level of hiker are you?</h1>
+                    <h5>Determining what level of hiker you are can be an important tool when planning future hikes.
+                        This hiking
+                        level guide will help you plan hikes according to different hike ratings set by various websites
+                        like All
+                        Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate,
+                        expert, or expert
+                        backpacker? </h5>
+                    <button class="scrollBtn">read more <i class="fas fa-arrow-up"></i></button>
+                </div>
+                <div class="block1Img">
+                    <img src="../../img/01.png" alt="">
+                </div>
+            </div>
+
+            <div id="secondSlide" class="block1 block2">
+                <div class="block1Img">
+                    <img src="../../img/02.png" alt="">
+                </div>
+                <div class="block1Description block2Description">
+                    <p class="number">02</p>
+                    <p class="sectionTitle">Hiking Essentials</p>
+                    <h1 class="title">Picking the right Hiking Gear!</h1>
+                    <h5>The nice thing about beginning hiking is that you don’t really need any special gear, you
+                        can probably get away with things you already have.
+                        Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular
+                        clothes,
+                        which will get heavy and chafe wif they get sweaty or wet.
+                    </h5>
+                    <button class="scrollBtn">read more <i class="fas fa-arrow-up"></i></button>
+                </div>
+            </div>
+
+
+            <div id="thirdSlide" class="block1 ">
+                <div class="block1Description">
+                    <p class="number">03</p>
+                    <p class="sectionTitle">where you go is the key</p>
+                    <h1 class="title">Understand Your Map & Timing</h1>
+                    <h5>To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag.
+                        Read over the
+                        guide, study the map, and have a good idea of what to expect. I like to know what my next
+                        landmark is as I
+                        hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the
+                        junction..
+                    </h5>
+                    <button class="scrollBtn">read more <i class="fas fa-arrow-up"></i></button>
+                </div>
+                <div class="block1Img">
+                    <img src="../../img/03.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

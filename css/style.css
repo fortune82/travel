@@ -1,0 +1,378 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  background-size: cover;
+  background-position: 50% -30%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Gilroy", Roboto, sans-serif;
+  font-weight: normal;
+}
+
+body a:hover {
+  color: #FBD784;
+}
+
+nav {
+  position: absolute;
+  z-index: 140;
+  width: 100%;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+nav .menu .logo {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 80px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Chronicle-Display", sans-serif;
+}
+
+nav .menu .logo:hover {
+  color: #fff;
+}
+
+nav .menu .account {
+  position: relative;
+  padding-top: 15px;
+  padding-right: 80px;
+}
+
+nav .menu .account:hover {
+  color: #fff;
+}
+
+nav .menu .account .fa-user-circle {
+  padding-right: 10px;
+}
+
+nav .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu ul li {
+  display: inline;
+  padding-right: 40px;
+}
+
+nav .menu ul a:hover {
+  color: #FBD784;
+}
+
+.leftSideMenu {
+  padding-top: 130px;
+  left: 2%;
+  position: fixed;
+}
+
+.leftSideMenu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 140;
+  padding-bottom: 24px;
+}
+
+.leftSideMenu ul .folow {
+  position: relative;
+  left: -80px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding-bottom: 100px;
+}
+
+.rightSideMenu {
+  padding-top: 130px;
+  right: 80px;
+  position: fixed;
+}
+
+.rightSideMenu .rightSideMenuBox li a {
+  display: block;
+  padding: 20px;
+  z-index: 140;
+  text-align: right;
+}
+
+.rightSideMenu .range {
+  position: relative;
+  top: 150px;
+  left: 125px;
+}
+
+.rightSideMenu .range input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 3px;
+  width: 240px;
+  background-color: rgba(252, 249, 249, 0.5);
+  outline: none;
+  scrollbar-face-color: #fff;
+}
+
+.rightSideMenu .range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  width: 3px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.parallax-test {
+  position: absolute;
+}
+
+.parallax-test--zero {
+  z-index: 9;
+}
+
+.parallax-test--one {
+  z-index: 70;
+  top: 300px;
+  background: -webkit-gradient(linear, botttom, color-stop(0, transparent), color-stop(50%, transparent), color-stop(50%, #ccc));
+  background: linear-gradient(to botttom, transparent 0, transparent 50%, #ccc 50% #ccc 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-test--two {
+  z-index: 80;
+  top: 600px;
+}
+
+.parallax-test--end {
+  z-index: 100;
+  top: 110vh;
+  height: 3000px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0B1D26), color-stop(90%, #0B1D26), to(transparent));
+  background: linear-gradient(to top, #0B1D26 0%, #0B1D26 90%, transparent);
+  overflow: hidden;
+}
+
+.firstDescription {
+  position: fixed;
+  top: 35%;
+  left: 55%;
+  width: 865px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 91;
+}
+
+.firstDescription .sectionTitle {
+  position: fixed;
+  margin: 0;
+  font-family: "Gilroy", Roboto, sans-serif;
+  top: 23%;
+  left: 59%;
+  width: 865px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 92;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #FBD784;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.firstDescription .sectionTitle::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #FBD784;
+  width: 55px;
+  position: relative;
+  top: 15px;
+  right: 75px;
+}
+
+.firstDescription .title {
+  position: fixed;
+  font-family: "Chronicle-Display", sans-serif;
+  top: 12%;
+  width: 865px;
+  text-transform: capitalize;
+  font-size: 88px;
+}
+
+.firstDescription .scrollBtn {
+  font-family: "Gilroy", Roboto, sans-serif;
+  text-align: left;
+  margin-top: 230px;
+  font-size: 16px;
+  color: #FBD784;
+  font-weight: normal;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+}
+
+.firstDescription .scrollBtn:hover {
+  color: #FBD784;
+}
+
+.firstDescription .scrollBtn .fa-arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.title__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0B1D26), to(transparent));
+  background: linear-gradient(to bottom, #0B1D26, transparent);
+}
+
+.first {
+  background: #0B1D26;
+  position: relative;
+  top: 115vh;
+  z-index: 130;
+}
+
+.first .block1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  padding-bottom: 200px;
+}
+
+.first .block1 .block1Description {
+  padding-top: 0;
+  margin-right: 100px;
+  margin-left: 90px;
+}
+
+.first .block1 .block1Description .number {
+  position: relative;
+  margin: 0;
+  font-size: 175px;
+  display: block;
+  top: 150px;
+  right: 96px;
+  opacity: 0.2;
+}
+
+.first .block1 .block1Description .sectionTitle {
+  position: relative;
+  font-family: "Gilroy", Roboto, sans-serif;
+  left: 17%;
+  z-index: 92;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #FBD784;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.first .block1 .block1Description .sectionTitle::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #FBD784;
+  width: 55px;
+  position: relative;
+  top: 15px;
+  right: 75px;
+}
+
+.first .block1 .title {
+  font-family: "Chronicle-Display", sans-serif;
+  top: 20%;
+  text-transform: capitalize;
+  font-size: 48px;
+}
+
+.first .block1 .scrollBtn {
+  font-family: "Gilroy", Roboto, sans-serif;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 16px;
+  color: #FBD784;
+  font-weight: normal;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #FBD784;
+  outline: none;
+}
+
+.first .block1 .scrollBtn:hover {
+  color: #fff;
+}
+
+.first .block1 .scrollBtn .fa-arrow-up {
+  margin-top: 2px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #FBD784;
+}
+
+.first .block1 .scrollBtn .fa-arrow-up:hover {
+  color: #fff;
+}
+
+.first .block2 .block2Description {
+  margin-left: 200px;
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */
